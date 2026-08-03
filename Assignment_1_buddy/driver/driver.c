@@ -6,7 +6,7 @@
 #include "C:\Users\Dell\Downloads\CS509\Assignment_1_buddy\include\csr.h"
 #include "C:\Users\Dell\Downloads\CS509\Assignment_1_buddy\include\bfs.h"
 #include "C:\Users\Dell\Downloads\CS509\Assignment_1_buddy\include\dfs.h"
-
+#include "C:\Users\Dell\Downloads\CS509\Assignment_1_buddy\include\sssp.h"
 int main()
 {
     Graph graph;
@@ -39,8 +39,11 @@ int main()
         printf("=====================================\n");
         printf("1. Breadth First Search (BFS)\n");
         printf("2. Depth First Search (DFS)\n");
+        
+
         printf("3. Print CSR Representation\n");
-        printf("4. Exit\n");
+        printf("4. Single Source Shortest Path(SSSP)")
+        printf("5. Exit\n");
         printf("=====================================\n");
 
         printf("Enter your choice: ");
@@ -92,8 +95,27 @@ int main()
                 printCSR(csr);
 
                 break;
-
             case 4:
+case 4:
+
+    start = clock();
+
+    readGraph("sssp_100.txt");   // or whichever test file you want
+    convertCSR();
+    dijkstra();
+    printShortestPath();
+    freeMemory();
+
+    end = clock();
+
+    executionTime = (double)(end - start) / CLOCKS_PER_SEC;
+
+    printf("\nExecution Time : %.6f seconds\n", executionTime);
+
+    fprintf(fo, "\nSSSP Execution Time : %.6f seconds\n", executionTime);
+
+    break;
+            case 5:
 
                 printf("\nProgram Terminated.\n");
 
@@ -104,7 +126,7 @@ int main()
                 printf("\nInvalid Choice.\n");
         }
 
-    }while(choice != 4);
+    }while(choice != 5);
     fclose(fo);
     freeCSR(&csr);
     freeGraph(&graph);
