@@ -2,26 +2,33 @@
 CC = gcc
 
 # Compiler Flags
-CFLAGS = -Wall -Wextra -Iinclude
+CFLAGS = -Wall -Iinclude
+
+# Executable Name
+TARGET = graph.exe
 
 # Source Files
-SRC = src/matrix.c
-DRIVER = driver/test_drivers.c
-
-# Output Executable
-TARGET = gemm.exe
+SRC = driver/driver.c \
+      src/graph.c \
+      src/csr.c \
+      src/bfs.c \
+      src/dfs.c \
+	  Src/sssp.c
 
 # Default Target
 all: $(TARGET)
 
 # Build Executable
-$(TARGET): $(SRC) $(DRIVER)
-	$(CC) $(CFLAGS) $(DRIVER) $(SRC) -o $(TARGET)
+$(TARGET): $(SRC)
+	$(CC) $(CFLAGS) $(SRC) -o $(TARGET)
 
 # Run Program
 run: $(TARGET)
 	./$(TARGET)
 
-# Remove Executable
+# Clean Generated Files
 clean:
-	del /Q $(TARGET)
+	del /Q $(TARGET) 2>nul || rm -f $(TARGET)
+
+# Rebuild Project
+rebuild: clean all
