@@ -154,61 +154,28 @@ Stores the corresponding edge weights.
 
 # Algorithms
 
-## 1. Breadth First Search (BFS)
+## 1. Breadth First Search (BFS): BFS explores the graph level by level using a queue.
 
-BFS explores the graph level by level using a queue.
+### Time Complexity: O(V + E)
 
-### Time Complexity
-
-```
-O(V + E)
-```
-
-### Space Complexity
-
-```
-O(V)
-```
+### Space Complexity: O(V)
 
 ---
 
-## 2. Depth First Search (DFS)
+## 2. Depth First Search (DFS): DFS explores vertices recursively before backtracking.
 
-DFS explores vertices recursively before backtracking.
+### Time Complexity: O(V + E)
 
-### Time Complexity
-
-```
-O(V + E)
-```
-
-### Space Complexity
-
-```
-O(V)
-```
+### Space Complexity: O(V)
 
 ---
 
-## 3. Single Source Shortest Path (SSSP)
+## 3. Single Source Shortest Path (SSSP): The shortest paths are computed using **Dijkstra's Algorithm** on the CSR representation.
 
-The shortest paths are computed using **Dijkstra's Algorithm** on the CSR representation.
+### Time Complexity: O(V² + E)
 
-### Time Complexity
+### Space Complexity: O(V)
 
-```
-O(V² + E)
-```
-
-*(Array-based implementation without a priority queue.)*
-
-### Space Complexity
-
-```
-O(V)
-```
-
----
 
 # Performance Measurement
 
@@ -229,6 +196,16 @@ The following operations are **excluded**:
 - Memory Deallocation
 
 ---
+
+# BFS and DFS Performance Results
+
+| Test Case | Source Vertex | BFS Execution Time (s) | DFS Execution Time (s) |
+|-----------|---------------|-----------------------:|-----------------------:|
+| Test Case 1 | 0 | 0.003000 | 0.002000 |
+| Test Case 2 | 99 | 0.001000 | 0.001000 |
+| Test Case 3 | 999 | 0.002000 | 0.001000 |
+| Test Case 4 | 0 | 0.001000 | 0.001000 |
+| Test Case 5 | 99999 | 0.004000 | 0.002000 |
 
 # SSSP Performance Results
 
