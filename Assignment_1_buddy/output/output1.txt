@@ -1,6 +1,6 @@
 
 BFS Source : 0
-Execution Time : 0.003000 seconds
+Execution Time : 0.002000 seconds
 
 DFS Source : 0
-Execution Time : 0.002000 seconds
+Execution Time : 0.003000 seconds
