@@ -80,7 +80,6 @@ Assignment_1_buddy/
 │   ├── output2.txt
 │   ├── output3.txt
 │   ├── output4.txt
-│   ├── output5.txt
 │   ├── output_sssp1.txt
 │   ├── output_sssp2.txt
 │   ├── output_sssp3.txt
@@ -199,13 +198,12 @@ The following operations are **excluded**:
 
 # BFS and DFS Performance Results
 
-| Test Case | Source Vertex | BFS Execution Time (s) | DFS Execution Time (s) |
+| Test Case | Source Vertex | BFS Execution Time (ms) | DFS Execution Time (ms) |
 |-----------|---------------|-----------------------:|-----------------------:|
-| Test Case 1 | 0 | 0.003000 | 0.002000 |
-| Test Case 2 | 99 | 0.001000 | 0.001000 |
-| Test Case 3 | 999 | 0.002000 | 0.001000 |
-| Test Case 4 | 0 | 0.001000 | 0.001000 |
-| Test Case 5 | 99999 | 0.004000 | 0.002000 |
+| Test Case 1 | 0 | 2.000 | 3.000 |
+| Test Case 2 | 0 | 4.000 | 4.000 |
+| Test Case 3 | 0 | 381.000 | 95.000 |
+| Test Case 4 | 0 | 14784.000 | Not Reached |
 
 # SSSP Performance Results
 
@@ -318,11 +316,11 @@ This project demonstrates the implementation of graph algorithms using the **Com
 # Authors
 
 ### Anirudh Shukla
-- BFS
-- DFS
 - CSR Representation
+- BFS & DFS
+- Performance Evaluation for BFS & DFS
 
 ### Kalki Dang
 - CSR Representation
 - Single Source Shortest Path (SSSP)
-- Performance Evaluation
+- Performance Evaluation for SSSP
