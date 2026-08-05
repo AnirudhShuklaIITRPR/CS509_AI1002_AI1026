@@ -19,7 +19,7 @@ int main()
     double executionTime;
 
     // Read Graph
-    readGraph(&graph, "test/test_case_5.txt");
+    readGraph(&graph, "test/test_case_4.txt");
 
     // Convert Adjacency List to CSR
 
