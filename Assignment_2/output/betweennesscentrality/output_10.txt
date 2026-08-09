@@ -1,0 +1,16 @@
+Algorithm: Betweenness Centrality
+Test Case: 10
+
+Vertex Centrality
+0 0.00
+1 2.00
+2 2.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+
+Execution Time: 0.000000 ms

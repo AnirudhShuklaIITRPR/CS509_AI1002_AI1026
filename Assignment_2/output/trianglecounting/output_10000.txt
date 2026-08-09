@@ -1,0 +1,6 @@
+TRIANGLE COUNTING RESULT
+Test Case: 10000
+Input File: test/test_case_10000.txt
+
+Number of triangles: 0
+Execution Time: 0.000000000000 seconds
