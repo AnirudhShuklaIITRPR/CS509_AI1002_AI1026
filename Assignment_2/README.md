@@ -92,6 +92,20 @@ make
 Results are stored in the `output/` directory.
 
 ## Performance Evaluation
+| Algorithm            | Test Case   | Vertices | Execution Time (seconds) | Status |
+| -------------------- | ----------- | -------: | -----------------------: | ------ |
+| Connected Components | `cc_10`     |       10 |           0.000000000000 | Pass   |
+| Connected Components | `cc_100`    |      100 |           0.000000000000 | Pass   |
+| Connected Components | `cc_10000`  |   10,000 |           0.000000000000 | Pass   |
+| Connected Components | `cc_50000`  |   50,000 |           0.001000000000 | Pass   |
+| Connected Components | `cc_100000` |  100,000 |           0.002000000000 | Pass   |
+| Test Case   | Vertices |       Time (s) |
+| ----------- | -------: | -------------: |
+| `cc_10`     |       10 | 0.000000000000 |
+| `cc_100`    |      100 | 0.000000000000 |
+| `cc_10000`  |   10,000 | 0.000000000000 |
+| `cc_50000`  |   50,000 | 0.001000000000 |
+| `cc_100000` |  100,000 | 0.002000000000 |
 
 ---
 
