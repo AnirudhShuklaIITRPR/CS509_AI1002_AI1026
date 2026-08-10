@@ -2,5 +2,5 @@ TRIANGLE COUNTING RESULT
 Test Case: 10
 Input File: test/test_case_10.txt
 
-Number of triangles: 0
+Number of triangles: 4
 Execution Time: 0.000000000000 seconds
