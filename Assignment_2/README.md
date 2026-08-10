@@ -112,6 +112,23 @@ Results are stored in the `output/` directory.
 | Connected Components | `cc_50000` | 50,000 | 0.001000000000 | Pass |
 | Connected Components | `cc_100000` | 100,000 | 0.002000000000 | Pass |
 
+### Triangle Counting
+
+| Algorithm | Test Case | Vertices | Execution Time (seconds) | Status |
+|---|---|---:|---:|---|
+| Triangle Counting | `tc_10` | 10 | 0.000000000000 | Pass |
+| Triangle Counting | `tc_100` | 100 | 0.000000000000 | Pass |
+| Triangle Counting | `tc_10000` | 10,000 | 0.000000000000 | Pass |
+| Triangle Counting | `tc_50000` | 50,000 | 0.001000000000 | Pass |
+| Triangle Counting | `tc_100000` | 100,000 | 0.003000000000 | Pass |
+
+### Betweenness Centrality
+
+| Algorithm | Test Case | Vertices | Execution Time (ms) | Status |
+|---|---|---:|---:|---|
+| Betweenness Centrality | `bc_10` | 10 | 0.000 | Pass |
+| Betweenness Centrality | `bc_100` | 100 | 4.000 | Pass |
+| Betweenness Centrality | `bc_1000` | 1,000 | 2535.000 | Pass |
 ### Observation
 
 The Connected Components implementation shows very low execution time across the tested graph sizes. The maximum measured execution time was **0.002 seconds** for the 100,000-vertex test case.
