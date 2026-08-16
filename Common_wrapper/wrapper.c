@@ -13,6 +13,7 @@ int main()
         printf("=====================================\n");
         printf("1. Run Assignment 1 \n");
         printf("2. Run Assignment 2 \n");
+        printf("3. Run Assignment 3 \n");
         printf("0. Exit\n");
         printf("-------------------------------------\n");
         printf("Enter your choice: ");
@@ -47,6 +48,23 @@ int main()
 
                 // Run graph
                 system("graph2.exe");
+
+                // Return to Common_wrapper directory
+                _chdir("..\\..\\Common_wrapper");
+
+                break;
+            }
+
+            case 3:
+            {
+                if (_chdir("..\\Assignment_3") != 0)
+                {
+                    printf("Unable to open GEMM directory.\n");
+                    break;
+                }
+
+                // Run graph
+                system("Assignment_3.exe");
 
                 // Return to Common_wrapper directory
                 _chdir("..\\..\\Common_wrapper");
