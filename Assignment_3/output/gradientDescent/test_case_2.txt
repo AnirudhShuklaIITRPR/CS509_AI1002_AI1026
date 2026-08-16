@@ -1,0 +1,10 @@
+Algorithm: Gradient Descent
+Test Case: 2
+Input File: tests/gradientDescent/test_case_2.txt
+
+Polynomial Degree: 4
+Initial X: 2.000000
+Final X: 0.000011
+Function Value: 0.000000
+Iterations: 134
+Execution Time: 0.000000 ms
