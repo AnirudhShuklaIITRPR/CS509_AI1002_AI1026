@@ -1,12 +1,30 @@
+CXX = g++
 CC = gcc
-CFLAGS = -Wall -Wextra -Iinclude
+
+CXXFLAGS = -std=c++17 -O2 -Wall -Wextra -Iinclude
+CFLAGS = -O2 -Wall -Wextra -Iinclude
 
 TARGET = Assignment_3.exe
 
-SRC = driver/driver.c \ src/gradientDescent.c
+CPP_SRC = driver/main.cpp src/maxflow.cpp
+C_SRC = src/gradientDescent.c
 
-all:
-	$(CC) $(CFLAGS) $(SRC) -o $(TARGET) -lm
+CPP_OBJ = $(CPP_SRC:.cpp=.o)
+C_OBJ = $(C_SRC:.c=.o)
+
+all: $(TARGET)
+
+$(TARGET): $(CPP_OBJ) $(C_OBJ)
+	$(CXX) $(CPP_OBJ) $(C_OBJ) -o $(TARGET)
+
+driver/main.o: driver/main.cpp
+	$(CXX) $(CXXFLAGS) -c driver/main.cpp -o driver/main.o
+
+src/maxflow.o: src/maxflow.cpp
+	$(CXX) $(CXXFLAGS) -c src/maxflow.cpp -o src/maxflow.o
+
+src/gradientDescent.o: src/gradientDescent.c
+	$(CC) $(CFLAGS) -c src/gradientDescent.c -o src/gradientDescent.o
 
 clean:
-	del /Q $(TARGET) 2>NUL
+	del /Q driver\main.o src\maxflow.o src\gradientDescent.o Assignment_3.exe 2>NUL

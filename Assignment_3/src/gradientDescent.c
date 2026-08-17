@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-#include "C:\\Users\\Dell\\Downloads\\CS509\\BUDDY\\Assignment_3\\include\\gradientDescent.h"
+#include "gradientDescent.h"
 
 double evaluatePolynomial(int degree, double coefficients[], double x){
     double result = 0.0;
